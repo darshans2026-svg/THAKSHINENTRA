@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>File Selector UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="tabs">
+    <button id="singleTab" class="active">Single Select</button>
+    <button id="multiTab">Multiple Select</button>
+  </div>
+
+  <div id="singleBox" class="box">
+    <h2>Single Selection Mode</h2>
+    <p>Select one item at a time. Click on any node to select it.</p>
+
+    <input type="text" id="searchSingle" placeholder="Search files and folders..." />
+
+    <div class="tree">
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="radio" name="single"> Documents</label>
+        <div class="children">
+          <label><input type="radio" name="single"> Work</label>
+          <label><input type="radio" name="single"> Personal</label>
+        </div>
+      </div>
+
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="radio" name="single"> Downloads</label>
+        <div class="children">
+          <label><input type="radio" name="single"> Software</label>
+          <label><input type="radio" name="single"> Media</label>
+          <label><input type="radio" name="single"> Archives</label>
+        </div>
+      </div>
+
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="radio" name="single"> Desktop</label>
+        <div class="children">
+          <label><input type="radio" name="single"> Screenshots</label>
+          <label><input type="radio" name="single"> Temp Files</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="multiBox" class="box hidden">
+    <h2>Multiple Selection Mode</h2>
+    <p>Select multiple items independently.</p>
+
+    <input type="text" id="searchMulti" placeholder="Search files and folders..." />
+
+    <div class="tree">
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="checkbox"> Documents</label>
+        <div class="children">
+          <label><input type="checkbox"> Work</label>
+          <label><input type="checkbox"> Personal</label>
+        </div>
+      </div>
+
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="checkbox"> Downloads</label>
+        <div class="children">
+          <label><input type="checkbox"> Software</label>
+          <label><input type="checkbox"> Media</label>
+          <label><input type="checkbox"> Archives</label>
+        </div>
+      </div>
+
+      <div class="node">
+        <span class="toggle">▶</span>
+        <label><input type="checkbox"> Desktop</label>
+        <div class="children">
+          <label><input type="checkbox"> Screenshots</label>
+          <label><input type="checkbox"> Temp Files</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
